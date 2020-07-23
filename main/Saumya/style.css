@@ -1,0 +1,221 @@
+*{                                  /* to remove outer space in page */
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+}
+
+body
+{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Flamenco', cursive;
+    
+}
+header{
+    background-image: url('image/img4.jpg');
+      background-size: cover;
+    background-repeat: no-repeat;
+       height:100vh;
+
+}
+
+
+.block
+{   
+    
+    background-color: #D6EAF8;
+    border-color: #21618C;
+    border-style: solid;
+    border-width: 3px;
+}
+.heading p
+{
+    text-align: center;
+    color:#21618C;
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 10px;
+    margin-bottom: 50px;
+
+}
+.heading p:hover
+{
+    
+    color: #922B21;
+  
+}
+.content
+{
+    width:70%;
+    margin: auto;
+    text-align: center;
+    color:#21618C;
+    font-size: 30px;
+    padding: 10px;
+   
+}
+.content img
+{
+    width:90%;
+}
+
+
+
+
+
+.clearfix:after    /* to  get data  below logo*/
+{    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.row
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    /*background-color: #D6EAF8; 
+    border-color: #21618C;
+    border-style: solid;
+    border-width: 2px;*/
+}
+
+.main-nav
+{
+   float: right;
+   margin-top: 20px;   
+
+}
+.main-nav li
+{
+
+    display: inline-block;
+    list-style: none;
+    
+    margin-right: 40px;
+
+}
+.main-nav li a{
+    padding: 5px 0px;
+    color: #21618C;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main-nav li:hover
+{
+    border-bottom: 5px solid  #922B21;
+}
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    color:  #922B21;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.main-content-header p
+{
+    color: #21618C;
+}
+
+.btn
+{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s,color 0.2s
+
+}
+.btn-full
+{
+    background-color: transparent;
+    color: #21618C ;
+    margin-right: 15px;
+    border:1px solid #21618C  ;
+}
+
+.btn-full:hover
+{
+    background-color: white;
+
+}
+
+.colorchange
+{
+    animation: colorchangesaum 1s infinite;
+}
+@keyframes colorchangesaum{
+0%{color: red;}
+25%{color: pink;}
+50%{color: white;}
+100%{color: #bf55ec;}
+
+}
+
+.mobile-icon
+{
+    display:none;
+}
+/*///////responsive queries///////*/
+
+@media only screen and (max-width: 1180px)
+{
+    .main-content-header
+    {
+        width: 100%;
+        padding:0 2%;
+    }
+}
+
+@media only screen and (max-width: 998px)
+{
+    h1
+    {
+        font-size: 200%;
+    }
+}
+@media only screen and (max-width: 768px)
+{ 
+    h1{font-size: 180%;}
+
+    .main-nav
+    {
+        display: none;
+    }
+    .mobile-icon
+     {
+        display: inline-block;
+        color: white;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+     }
+     .main-nav
+     {
+        float: left;
+     }
+     .main-nav li
+     {
+        
+        display: block;
+        margin-top: 10px;
+     }
+
+}
